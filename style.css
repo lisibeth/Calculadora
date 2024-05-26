@@ -1,0 +1,94 @@
+body{
+    margin: 0;                 /* Elimina el margen del cuerpo */
+    padding: 0;                /* Elimina el relleno del cuerpo */
+    background-image: url(img/pngegg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+.content-body{
+   background: #a2d4f53b;
+    width: 100%;               /* Establece el ancho al 100% */
+    height: 100vh;             /* Establece la altura al 100% de la ventana gráfica */
+    display: flex;             /* Utiliza flexbox para centrar el contenido */
+    justify-content: center;   /* Centra horizontalmente el contenido */
+    align-items: center;       /* Centra verticalmente el contenido */
+    
+}
+
+.content-calculator {
+    width: 400px;              /* Establece el ancho de la calculadora */
+    height: 450px;             /* Establece la altura de la calculadora */
+    background-color: #aaaaaa; /* Establece el color de fondo de la calculadora */
+    border-radius: 10px;       /* Agrega un borde redondeado a la calculadora */
+    box-shadow: 2px 1px 29px 6px rgba(0, 0, 0, 0.3); /* Agrega una sombra a la calculadora */
+    padding: 20px 15px;        /* Agrega relleno a la calculadora */
+    display: grid;             /* Utiliza una cuadrícula para organizar los elementos */
+    grid-template-columns: repeat(4, 1fr); /* Crea 4 columnas de igual tamaño */
+    grid-template-rows: 85px;  /* Establece la altura de las filas */
+    grid-gap: 20px;            /* Agrega espacio entre los elementos de la cuadrícula */
+    box-shadow: 3px 3px 54px #059db1bb;
+}
+
+.screen{
+    background-color: #000000cc; /* Establece el color de fondo de la pantalla */
+    border-radius: 10px;       /* Agrega un borde redondeado a la pantalla */
+    color: #1fd2ee;            /* Establece el color del texto de la pantalla */
+    padding: 15px;             /* Agrega relleno a la pantalla */
+    grid-column: 1 / 5;        /* Ocupa las 4 columnas de la cuadrícula */
+}
+
+.screen > input{
+    background: none;          /* Elimina el fondo del input de la pantalla */
+    color: inherit;            /* Hereda el color del texto de la pantalla */
+    border: none;              /* Elimina el borde del input */
+    padding: 0;                /* Elimina el relleno del input */
+    outline: inherit;          /* Hereda el contorno del input */
+    font-size: 50px;           /* Establece el tamaño de fuente del input */
+    width: 100%;               /* Establece el ancho del input al 100% */
+}
+
+.btn-cal{
+    background-color: white;   /* Establece el color de fondo de los botones */
+}
+
+.btn-cal-radius{
+    border-radius: 10px;       /* Agrega un borde redondeado a los botones */
+}
+
+.btn-cal > input{
+    border: 0;                 /* Elimina el borde del input de los botones */
+    height: 100%;              /* Establece la altura del input al 100% */
+    width: 100%;               /* Establece el ancho del input al 100% */
+    border-radius: 10px;       /* Agrega un borde redondeado al input de los botones */
+    outline: none;             /* Elimina el contorno del input */
+    color: #7e7e7e;            /* Establece el color del texto del input */
+    font-size: 35px;           /* Establece el tamaño de fuente del input */
+}
+
+.btn-cal > .equal{
+    background-color: #fffb88; /* Establece el color de fondo del botón igual */
+}
+
+.btn-cal > .clean{
+    background-color: #45d5da9f; /* Establece el color de fondo del botón limpiar */
+}
+
+.btn-cal :hover{
+    transition-duration: 0.4s; /* Establece la duración de la transición al pasar el mouse por encima */
+    background-color: #45d5da9f; /* Establece el color de fondo al pasar el mouse por encima */
+    color: white;              /* Establece el color del texto al pasar el mouse por encima */
+}
+
+.btn-clean :hover{
+    transition-duration: 0.4s; /* Establece la duración de la transición al pasar el mouse por encima */
+    background-color: #056592; /* Establece el color de fondo al pasar el mouse por encima */
+    color: white;              /* Establece el color del texto al pasar el mouse por encima */
+}
+
+.btn-equal :hover{
+    transition-duration: 0.4s; /* Establece la duración de la transición al pasar el mouse por encima */
+    background-color: #fffb59; /* Establece el color de fondo al pasar el mouse por encima */
+    color: black;              /* Establece el color del texto al pasar el mouse por encima */
+}
